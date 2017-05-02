@@ -62,5 +62,12 @@ public class Login {
 		rst.put("result", "ok");
 		return rst;
 	}
+	
+	@RequestMapping("/hello")
+	@ResponseBody
+	public String test(){
+		System.out.println("======controller test=============");
+		return "helo world,how are you!";
+	}
 
 }

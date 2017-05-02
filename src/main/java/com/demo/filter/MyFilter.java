@@ -8,13 +8,14 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 
-//@WebFilter
+@WebFilter
 public class MyFilter implements Filter {
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		System.out.println("============MyFilter≥ı ºªØ==================");
+		System.out.println("============MyFilter init==================");
 	}
 
 	@Override
